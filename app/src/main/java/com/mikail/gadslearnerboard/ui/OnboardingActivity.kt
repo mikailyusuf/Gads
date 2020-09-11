@@ -1,9 +1,10 @@
-package com.mikail.gadslearnerboard
+package com.mikail.gadslearnerboard.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.mikail.gadslearnerboard.R
 
 class OnboardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,7 @@ class OnboardingActivity : AppCompatActivity() {
         Handler().postDelayed({
 
             startActivity(Intent(this, LeaderBoardActivity::class.java))
-        }, 5000)
+        }, 2000)
+        finish()
     }
 }
